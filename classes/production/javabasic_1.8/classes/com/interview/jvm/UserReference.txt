@@ -1,0 +1,169 @@
+Classfile /E:/IdeaProject/javabasic/src/com/interview/jvm/UserReference.class
+  Last modified 2022-7-26; size 1048 bytes
+  MD5 checksum d51bb6ec55baa7f765296805ae9d1565
+  Compiled from "UserReference.java"
+public class com.interview.jvm.UserReference
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = Methodref          #13.#35        // java/lang/Object."<init>":()V
+   #2 = String             #36            // Jason
+   #3 = Fieldref           #16.#37        // com/interview/jvm/UserReference.name:Ljava/lang/String;
+   #4 = Double             10000.0d
+   #6 = Methodref          #38.#39        // java/lang/Double.valueOf:(D)Ljava/lang/Double;
+   #7 = Fieldref           #16.#40        // com/interview/jvm/UserReference.salary:Ljava/lang/Double;
+   #8 = Fieldref           #41.#42        // java/lang/System.out:Ljava/io/PrintStream;
+   #9 = String             #43            // Jason say!
+  #10 = Methodref          #44.#45        // java/io/PrintStream.println:(Ljava/lang/String;)V
+  #11 = Methodref          #46.#47        // java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+  #12 = Methodref          #46.#48        // java/lang/Integer.intValue:()I
+  #13 = Class              #49            // java/lang/Object
+  #14 = Methodref          #16.#50        // com/interview/jvm/UserReference.calc:(Ljava/lang/Integer;Ljava/lang/Integer;)Ljava/lang/Integer;
+  #15 = Methodref          #44.#51        // java/io/PrintStream.println:(Ljava/lang/Object;)V
+  #16 = Class              #52            // com/interview/jvm/UserReference
+  #17 = Utf8               age
+  #18 = Utf8               Ljava/lang/Integer;
+  #19 = Utf8               name
+  #20 = Utf8               Ljava/lang/String;
+  #21 = Utf8               salary
+  #22 = Utf8               Ljava/lang/Double;
+  #23 = Utf8               address
+  #24 = Utf8               <init>
+  #25 = Utf8               ()V
+  #26 = Utf8               Code
+  #27 = Utf8               LineNumberTable
+  #28 = Utf8               say
+  #29 = Utf8               calc
+  #30 = Utf8               (Ljava/lang/Integer;Ljava/lang/Integer;)Ljava/lang/Integer;
+  #31 = Utf8               main
+  #32 = Utf8               ([Ljava/lang/String;)V
+  #33 = Utf8               SourceFile
+  #34 = Utf8               UserReference.java
+  #35 = NameAndType        #24:#25        // "<init>":()V
+  #36 = Utf8               Jason
+  #37 = NameAndType        #19:#20        // name:Ljava/lang/String;
+  #38 = Class              #53            // java/lang/Double
+  #39 = NameAndType        #54:#55        // valueOf:(D)Ljava/lang/Double;
+  #40 = NameAndType        #21:#22        // salary:Ljava/lang/Double;
+  #41 = Class              #56            // java/lang/System
+  #42 = NameAndType        #57:#58        // out:Ljava/io/PrintStream;
+  #43 = Utf8               Jason say!
+  #44 = Class              #59            // java/io/PrintStream
+  #45 = NameAndType        #60:#61        // println:(Ljava/lang/String;)V
+  #46 = Class              #62            // java/lang/Integer
+  #47 = NameAndType        #54:#63        // valueOf:(I)Ljava/lang/Integer;
+  #48 = NameAndType        #64:#65        // intValue:()I
+  #49 = Utf8               java/lang/Object
+  #50 = NameAndType        #29:#30        // calc:(Ljava/lang/Integer;Ljava/lang/Integer;)Ljava/lang/Integer;
+  #51 = NameAndType        #60:#66        // println:(Ljava/lang/Object;)V
+  #52 = Utf8               com/interview/jvm/UserReference
+  #53 = Utf8               java/lang/Double
+  #54 = Utf8               valueOf
+  #55 = Utf8               (D)Ljava/lang/Double;
+  #56 = Utf8               java/lang/System
+  #57 = Utf8               out
+  #58 = Utf8               Ljava/io/PrintStream;
+  #59 = Utf8               java/io/PrintStream
+  #60 = Utf8               println
+  #61 = Utf8               (Ljava/lang/String;)V
+  #62 = Utf8               java/lang/Integer
+  #63 = Utf8               (I)Ljava/lang/Integer;
+  #64 = Utf8               intValue
+  #65 = Utf8               ()I
+  #66 = Utf8               (Ljava/lang/Object;)V
+{
+  private java.lang.Integer age;
+    descriptor: Ljava/lang/Integer;
+    flags: ACC_PRIVATE
+
+  private java.lang.String name;
+    descriptor: Ljava/lang/String;
+    flags: ACC_PRIVATE
+
+  private java.lang.Double salary;
+    descriptor: Ljava/lang/Double;
+    flags: ACC_PRIVATE
+
+  private static java.lang.String address;
+    descriptor: Ljava/lang/String;
+    flags: ACC_PRIVATE, ACC_STATIC
+
+  public com.interview.jvm.UserReference();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=3, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: ldc           #2                  // String Jason
+         7: putfield      #3                  // Field name:Ljava/lang/String;
+        10: aload_0
+        11: ldc2_w        #4                  // double 10000.0d
+        14: invokestatic  #6                  // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+        17: putfield      #7                  // Field salary:Ljava/lang/Double;
+        20: return
+      LineNumberTable:
+        line 8: 0
+        line 11: 4
+        line 12: 10
+
+  public void say();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: getstatic     #8                  // Field java/lang/System.out:Ljava/io/PrintStream;
+         3: ldc           #9                  // String Jason say!
+         5: invokevirtual #10                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+         8: return
+      LineNumberTable:
+        line 16: 0
+        line 17: 8
+
+  public static java.lang.Integer calc(java.lang.Integer, java.lang.Integer);
+    descriptor: (Ljava/lang/Integer;Ljava/lang/Integer;)Ljava/lang/Integer;
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=4, args_size=2
+         0: iconst_3
+         1: invokestatic  #11                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+         4: astore_0
+         5: aload_0
+         6: invokevirtual #12                 // Method java/lang/Integer.intValue:()I
+         9: aload_1
+        10: invokevirtual #12                 // Method java/lang/Integer.intValue:()I
+        13: iadd
+        14: invokestatic  #11                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        17: astore_2
+        18: new           #13                 // class java/lang/Object
+        21: dup
+        22: invokespecial #1                  // Method java/lang/Object."<init>":()V
+        25: astore_3
+        26: aload_2
+        27: areturn
+      LineNumberTable:
+        line 20: 0
+        line 21: 5
+        line 22: 18
+        line 23: 26
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=3, locals=1, args_size=1
+         0: getstatic     #8                  // Field java/lang/System.out:Ljava/io/PrintStream;
+         3: iconst_1
+         4: invokestatic  #11                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+         7: iconst_2
+         8: invokestatic  #11                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        11: invokestatic  #14                 // Method calc:(Ljava/lang/Integer;Ljava/lang/Integer;)Ljava/lang/Integer;
+        14: invokevirtual #15                 // Method java/io/PrintStream.println:(Ljava/lang/Object;)V
+        17: return
+      LineNumberTable:
+        line 27: 0
+        line 28: 17
+}
+SourceFile: "UserReference.java"
